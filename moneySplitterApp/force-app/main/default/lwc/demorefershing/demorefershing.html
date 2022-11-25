@@ -1,0 +1,14 @@
+<template>
+    <lightning-button  title="refresh records" icon-name="utility:refresh" icon-position="center" onclick={handleRefresh} class="slds-m-left_x-small"></lightning-button>
+  
+    <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-spread slds-scrollable_x"> 
+      <div class="slds-col slds-scrollable_x" >
+          <lightning-datatable
+                  key-field="Id"
+                  columns={columns}
+                  data={records}
+                  class="slds-table_header-fixed_container slds-table_bordered slds-table_col-bordered slds-border_top ">
+          </lightning-datatable>            
+      </div>
+  </div>
+  </template>

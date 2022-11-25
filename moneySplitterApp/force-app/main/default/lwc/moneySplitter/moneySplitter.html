@@ -1,0 +1,11 @@
+<template>
+    <Lightning-card title="Money Splitter App">
+        <lightning-input label="Total Amount" type="number" onchange={handleAmount} value="amount"></lightning-input>
+         <lightning-input label="Total No of persons" type="number" onchange={handlechange} value={childvalue}></lightning-input> 
+        Money distributed will be :{interest}
+        <div class="footer">    
+            <lightning-button label="Calculate money" variant="Brand" onclick={calculateMoney}></lightning-button>
+        </div>
+        
+    </Lightning-card>
+</template>
